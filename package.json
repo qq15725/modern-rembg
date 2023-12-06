@@ -45,7 +45,7 @@
     "dist"
   ],
   "scripts": {
-    "dev": "rollup -cw & vite",
+    "dev": "vite",
     "lint": "eslint src",
     "test": "vitest",
     "build": "rimraf dist && rollup -c",

@@ -33,6 +33,7 @@ export async function removeBackground(
     resized.toBchwImageTensor().toTensor(),
   ])
   model.release()
+  debug && consoleDebug('Compute inference completion', result)
 
   const stride = resolution * resolution
   switch (options.output ?? 'foreground') {
@@ -64,6 +65,5 @@ export async function removeBackground(
       break
   }
 
-  debug && consoleDebug('Compute inference completion')
   return await resized.resize(imageTensor.dims[1], imageTensor.dims[0]).toBlob()
 }

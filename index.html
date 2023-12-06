@@ -5,19 +5,22 @@
   <title>Playground</title>
 </head>
 <body>
-  <div>Playground</div>
-
   <script type="module" async>
-    import { removeBackground } from './dist'
+    import { removeBackground } from './src'
 
-    const blob = await removeBackground('/docs/assets/example.jpg', {
+    const imageSource = '/examples/example.jpg'
+
+    const blob = await removeBackground(imageSource, {
       debug: true,
-      model: '/models/u2net.onnx',
-      resolution: 320,
+      model: '/models/small.onnx',
+      resolution: 1024,
+      wasmPaths: {
+        'ort-wasm-simd.wasm': './node_modules/onnxruntime-web/dist/ort-wasm-simd.wasm',
+      },
     })
 
     const img1 = new Image()
-    img1.src = '/docs/assets/example.jpg'
+    img1.src = imageSource
     img1.width = '100'
     document.body.append(img1)
 
