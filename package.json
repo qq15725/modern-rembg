@@ -47,7 +47,7 @@
   "scripts": {
     "dev": "rollup -cw & vite",
     "lint": "eslint src",
-    "test": "vitest --no-threads --no-isolate",
+    "test": "vitest",
     "build": "rimraf dist && rollup -c",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "release": "bumpp package.json --commit \"release: v%s\" --push --all --tag"
