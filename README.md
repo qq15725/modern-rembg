@@ -17,3 +17,22 @@
     <img src="https://img.shields.io/npm/l/modern-rembg.svg" alt="License">
   </a>
 </p>
+
+## 📦 Install
+
+```shell
+npm i modern-rembg
+
+# peerDependencies
+npm i onnxruntime-web
+```
+
+## 🦄 Usage
+
+```ts
+import { removeBackground } from 'modern-rembg'
+
+removeBackground('/example.jpg').then(blob => {
+  window.open(URL.createObjectURL(blob))
+})
+```
