@@ -20,7 +20,7 @@
 
 <p style="display: flex; align-items: center; justify-content: center;">
   <img src="https://raw.githubusercontent.com/qq15725/modern-rembg/main/examples/example.jpg" width="200" />
-  <img src="https://raw.githubusercontent.com/qq15725/modern-rembg/main/examples/example.out.jpg" width="200" />
+  <img src="https://raw.githubusercontent.com/qq15725/modern-rembg/main/examples/example.out.png" width="200" />
 </p>
 
 ## 📦 Install
