@@ -7,10 +7,24 @@
 <body>
   <div>Playground</div>
 
-  <script type="module">
-    import { one } from './src'
+  <script type="module" async>
+    import { removeBackground } from './dist'
 
-    console.log(one)
+    const blob = await removeBackground('/docs/assets/example.jpg', {
+      debug: true,
+      model: '/models/u2net.onnx',
+      resolution: 320,
+    })
+
+    const img1 = new Image()
+    img1.src = '/docs/assets/example.jpg'
+    img1.width = '100'
+    document.body.append(img1)
+
+    const img2 = new Image()
+    img2.src = URL.createObjectURL(blob)
+    img2.width = '100'
+    document.body.append(img2)
   </script>
 </body>
 </html>
