@@ -13,7 +13,7 @@
     const blob = await removeBackground(imageSource, {
       debug: true,
       model: '/models/u2netp.onnx',
-      resolution: 1024,
+      resolution: 320,
       wasmPaths: {
         'ort-wasm-simd.wasm': './node_modules/onnxruntime-web/dist/ort-wasm-simd.wasm',
       },
