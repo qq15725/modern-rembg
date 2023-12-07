@@ -28,7 +28,7 @@ export async function removeBackground(
   debug && consoleDebug('Loading model...')
   const model = await Model.from(modelSource)
   await model.load()
-  debug && consoleDebug('Compute inference...')
+  debug && consoleDebug('Processing...')
   const result = await model.run([
     resized.toBchwImageTensor().toTensor(),
   ])
@@ -38,11 +38,7 @@ export async function removeBackground(
   const stride = resolution * resolution
   switch (options.output ?? 'foreground') {
     case 'mask':
-      resized = new ImageTensor(new Float32Array(4 * stride), [
-        resolution,
-        resolution,
-        4,
-      ])
+      resized = new ImageTensor(new Float32Array(4 * stride), [resolution, resolution, 4])
       for (let i = 0; i < 4 * stride; i += 4) {
         const idx = i / 4
         const alpha = result.data[idx]

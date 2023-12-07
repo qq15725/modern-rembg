@@ -34,11 +34,7 @@ export class ImageTensor {
         const ctx = canvas.getContext('2d') as CanvasRenderingContext2D | null
         ctx!.drawImage(imageBitmap, 0, 0)
         const imageData = ctx!.getImageData(0, 0, canvas.width, canvas.height)
-        return new ImageTensor(new Float32Array(imageData.data), [
-          imageBitmap.height,
-          imageBitmap.width,
-          4,
-        ])
+        return new ImageTensor(new Float32Array(imageData.data), [imageBitmap.height, imageBitmap.width, 4])
       }
     }
 
@@ -50,7 +46,7 @@ export class ImageTensor {
     const scaleX = srcWidth / newWidth
     const scaleY = srcHeight / newHeight
 
-    const resized = new Float32Array(srcChannels * newWidth * newHeight)
+    const resized = new Uint8Array(srcChannels * newWidth * newHeight)
     for (let y = 0; y < newHeight; y++) {
       for (let x = 0; x < newWidth; x++) {
         for (let c = 0; c < srcChannels; c++) {
@@ -80,10 +76,7 @@ export class ImageTensor {
       }
     }
 
-    return new ImageTensor(
-      resized,
-      [newHeight, newWidth, srcChannels],
-    )
+    return new ImageTensor(new Float32Array(resized), [newHeight, newWidth, srcChannels])
   }
 
   toBchwImageTensor(

@@ -56,18 +56,18 @@ removeBackground('/example.jpg', {
 })
 ```
 
-## Models
+## Open source models
 
-| Model                                                                                                          | Resolution | From                                                                          |
-|----------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------------------------------------|
-| [u2net.onnx](https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx)                         | 320        | [danielgatis/rembg](https://github.com/danielgatis/rembg)                     |
-| [u2netp.onnx](https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2netp.onnx)                       | 320        | [danielgatis/rembg](https://github.com/danielgatis/rembg)                     |
-| [u2net_human_seg.onnx](https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net_human_seg.onnx)     | 320        | [danielgatis/rembg](https://github.com/danielgatis/rembg)                     |
-| [u2net_cloth_seg.onnx](https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net_cloth_seg.onnx)     | 320        | [danielgatis/rembg](https://github.com/danielgatis/rembg)                     |
-| [silueta.onnx](https://github.com/danielgatis/rembg/releases/download/v0.0.0/silueta.onnx)                     | 320        | [danielgatis/rembg](https://github.com/danielgatis/rembg)                     |
-| [isnet-general-use.onnx](https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-general-use.onnx) | 320        | [danielgatis/rembg](https://github.com/danielgatis/rembg)                     |
-| [isnet-anime.onnx](https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-anime.onnx)             | 320        | [danielgatis/rembg](https://github.com/danielgatis/rembg)                     |
-| [large](https://github.com/imgly/background-removal-js/raw/main/bundle/models/large?download=)                 | 1024       | [imgly/background-removal-js](https://github.com/imgly/background-removal-js) |
-| [medium](https://github.com/imgly/background-removal-js/raw/main/bundle/models/medium?download=)               | 1024       | [imgly/background-removal-js](https://github.com/imgly/background-removal-js) |
-| [small](https://github.com/imgly/background-removal-js/raw/main/bundle/models/small?download=)                 | 1024       | [imgly/background-removal-js](https://github.com/imgly/background-removal-js) |
+| Model                                                                                                          | Resolution | Size(MB)  | From                                                                          |
+|----------------------------------------------------------------------------------------------------------------|------------|-----------|-------------------------------------------------------------------------------|
+| [u2net.onnx](https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx)                         | 320        | 168       | [danielgatis/rembg](https://github.com/danielgatis/rembg)                     |
+| [u2netp.onnx](https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2netp.onnx)                       | 320        | 4         | [danielgatis/rembg](https://github.com/danielgatis/rembg)                     |
+| [u2net_human_seg.onnx](https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net_human_seg.onnx)     | 320        | 168       | [danielgatis/rembg](https://github.com/danielgatis/rembg)                     |
+| [u2net_cloth_seg.onnx](https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net_cloth_seg.onnx)     | 320        | 168       | [danielgatis/rembg](https://github.com/danielgatis/rembg)                     |
+| [silueta.onnx](https://github.com/danielgatis/rembg/releases/download/v0.0.0/silueta.onnx)                     | 320        | 42        | [danielgatis/rembg](https://github.com/danielgatis/rembg)                     |
+| [isnet-general-use.onnx](https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-general-use.onnx) | 320        | 170       | [danielgatis/rembg](https://github.com/danielgatis/rembg)                     |
+| [isnet-anime.onnx](https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-anime.onnx)             | 320        | 168       | [danielgatis/rembg](https://github.com/danielgatis/rembg)                     |
+| [large](https://github.com/imgly/background-removal-js/raw/main/bundle/models/large?download=)                 | 1024       | 176       | [imgly/background-removal-js](https://github.com/imgly/background-removal-js) |
+| [medium](https://github.com/imgly/background-removal-js/raw/main/bundle/models/medium?download=)               | 1024       | 88        | [imgly/background-removal-js](https://github.com/imgly/background-removal-js) |
+| [small](https://github.com/imgly/background-removal-js/raw/main/bundle/models/small?download=)                 | 1024       | 44        | [imgly/background-removal-js](https://github.com/imgly/background-removal-js) |
 

@@ -6,7 +6,7 @@ export class Assets {
       case 'u2netp.onnx':
         // @ts-expect-error import
         result = await import('../models/u2netp.onnx')
-        type = 'application/wasm'
+        type = 'application/octet-steam'
         break
       case 'ort-wasm.wasm':
         // @ts-expect-error import

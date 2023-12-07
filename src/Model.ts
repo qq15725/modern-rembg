@@ -48,7 +48,7 @@ export class Model {
     return this
   }
 
-  async run(inputs: Array<any>): Promise<any> {
+  async run(inputs: Array<any>, options?: InferenceSession.RunOptions): Promise<any> {
     if (!this._session) {
       await this.load()
     }
@@ -56,7 +56,7 @@ export class Model {
     this._session!.inputNames.forEach((inputName, i) => {
       feeds[inputName] = inputs[i]
     })
-    const result = await this._session!.run(feeds)
+    const result = await this._session!.run(feeds, options)
     return result[this._session!.outputNames[0]] as any
   }
 }
