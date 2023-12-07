@@ -33,7 +33,7 @@ export async function removeBackground(
     resized.toBchwImageTensor().toTensor(),
   ])
   model.release()
-  debug && consoleDebug('Compute inference completion', result)
+  debug && consoleDebug('Completion', result)
 
   const stride = resolution * resolution
   switch (options.output ?? 'foreground') {
