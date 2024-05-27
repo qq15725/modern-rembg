@@ -2,7 +2,7 @@
   "name": "modern-rembg",
   "type": "module",
   "version": "0.1.0",
-  "packageManager": "^pnpm@9.1.2",
+  "packageManager": "pnpm@9.1.2",
   "description": "A remove image background javascript lib. only ESM.",
   "author": "wxm",
   "license": "MIT",
