@@ -1,3 +1,7 @@
+## [0.1.1](https://github.com/qq15725/modern-rembg/compare/v0.1.0...v0.1.1) (2024-05-27)
+
+
+
 # [0.1.0](https://github.com/qq15725/modern-rembg/compare/v0.0.2...v0.1.0) (2024-05-27)
 
 
