@@ -24,7 +24,7 @@
 npm i modern-rembg
 
 # peerDependencies
-npm i onnxruntime-web
+npm i onnxruntime-web@1.18.0
 ```
 
 ## 🦄 Usage
