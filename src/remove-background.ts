@@ -14,7 +14,7 @@ export interface RemoveBackgroundOptions extends OnnxOptions {
 
 export async function removeBackground(
   imageSource: ImageSource,
-  options: RemoveBackgroundOptions,
+  options: RemoveBackgroundOptions = {},
 ): Promise<Blob> {
   const {
     debug,

@@ -2,7 +2,6 @@
   "name": "modern-rembg",
   "type": "module",
   "version": "0.0.2",
-  "packageManager": "pnpm@7.26.2",
   "description": "A remove image background javascript lib. only ESM.",
   "author": "wxm",
   "license": "MIT",
@@ -61,7 +60,7 @@
     "conventional-changelog-cli": "^4.1.0",
     "eslint": "^8.55.0",
     "fs-extra": "^11.2.0",
-    "onnxruntime-web": "^1.16.3",
+    "onnxruntime-web": "1.18.0",
     "rimraf": "^5.0.5",
     "rollup": "^4.6.1",
     "rollup-plugin-copy": "^3.5.0",
@@ -72,6 +71,6 @@
     "vitest": "^1.0.1"
   },
   "peerDependencies": {
-    "onnxruntime-web": "^1.*"
+    "onnxruntime-web": "1.18.0"
   }
 }
